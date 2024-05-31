@@ -122,7 +122,11 @@ color: #ffffff;
     font-size: 15px;
     text-transform: uppercase; }
     
-
+.nav-item.active .nav-link {
+    font-weight: bold; /* Cambia el estilo del texto */
+    color: #ff0000; /* Cambia el color del texto */
+    /* Otros estilos que desees aplicar */
+}
 
 .fondo3
 {
