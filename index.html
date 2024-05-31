@@ -143,5 +143,20 @@ Esto genero que los usuarios tengan confianza en nosotros y gracias a ello hemos
         </div>
 
             </body>
+    <script>
+    // Obtener la URL actual
+    var currentUrl = window.location.href;
+
+    // Obtener todos los elementos <a> dentro de la barra de navegación
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Iterar sobre los enlaces y comparar la URL actual con la URL del enlace
+    navLinks.forEach(function(navLink) {
+        if (navLink.href === currentUrl) {
+            // Agregar la clase "active" al elemento padre <li> del enlace
+            navLink.parentNode.classList.add('active');
+        }
+    });
+</script>
     
 </html>
